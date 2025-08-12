@@ -2,3 +2,36 @@
 title: "Importar Clientes"
 description: "Description of your new file."
 ---
+
+## <Icon icon="circle-play" color="#af19ef" size={30} /> Video:
+
+Aquí podrás encontrar un video explicativo que te guiará visualmente durante todo el proceso.
+
+## <Icon icon="stairs" color="#af19ef" size={30} /> Paso a Paso:
+
+<Steps>
+  <Step title="Ingresa a la sección 'Clientes'" stepNumber={1} titleSize="h3">
+    En el menú lateral izquierdo, selecciona la opción **Clientes** para crear un nuevo cliente
+  </Step>
+  <Step title="Nueva Importación de Clientes" titleSize="h3">
+    Haz clic en el botón **"Importar Clientes"** para iniciar el proceso.
+  </Step>
+  <Step title="Sube un nuevo archivo de Clientes" titleSize="h3">
+    Puedes cargar haciendo click o arrastando tus archivos, ten en cuenta que este metodo solo acepta formatos CSV, XLSX y XLS
+  </Step>
+  <Step title="Mapea tu archivo" titleSize="h3">
+    Ingresa el nombre del titulo de tu columna a la sección correspondiente. Ten en cuenta las siguientes funciones:
+
+    - Si ingresas la misma columna para nombre y apellido el sistema divira automaticamente el texto por los espacios de los datos en tu archivo. Así la primera sección se asignara a nombre y el resto del texto se ingresara como Apellido
+    - Las columnas de tu archivo que no se encuentren mapeadas en una sección especifica se agregaran como datos adiocionales de tus clientes de los cuales puedes hacer uso según tus necesidades en las llamadas.
+  </Step>
+  <Step title="Configura tus clientes">
+    Puedes asignar etiquetas a tus clientes para facilitar el filtrado de clientes en un futuro.
+
+    Además deberas proporcionar un código de área y zona horaria para tus clientes
+
+    <Warning>
+      Ten en cuenta que las configuraciones se aplicaran a todos los clientes del archivo importado
+    </Warning>
+  </Step>
+</Steps>
